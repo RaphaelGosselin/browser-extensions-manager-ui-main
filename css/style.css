@@ -1,0 +1,213 @@
+/* @author Raphael Gosselin */
+
+/*** Initialiser ***/
+/* typo */
+@import url(typo.css);
+
+/* color */
+@import url(color.css);
+
+/*** Ref ***/
+/*
+* Header
+* Main
+*
+*
+*Utilitaires
+*/
+
+/*** Style ***/
+/* page */
+.page {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/** Header **/
+/* barre haut */
+.barre_haut {
+    display: flex;
+    justify-content: space-between; 
+    width: 95%;
+    margin: 0 auto;
+}
+.barre_haut__btn {
+    width: 45px;
+    height: 45px;
+    background-color: var(--couleur-bleu--pale);
+    border: .8px solid white;
+    border-radius: 16px;
+}
+.barre_haut__btn:hover {
+    cursor: pointer;
+}
+/* menu */
+.menu__btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+@media(min-width: 700px){
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu__btn {
+        justify-content: center;
+        max-height: 45px;
+        margin: auto 0;
+    }
+    .menu h1 {
+        margin: 25px 18px;
+    }
+    .btn_menu {
+        margin: 0 10px;
+    }
+}
+.btn_menu {
+    position: relative;
+    display: inline-block;
+    padding:12px 24px;
+    background-color: var(--couleur-bleu);
+    color: #fff;
+    border: .8px solid white;
+    border-radius: 16px;
+}
+.btn_menu:hover {
+    cursor: pointer;
+    background-color: var(--couleur--rouge);
+    color: #000;
+    border-color: #000;
+}
+/** Main **/
+/* icon */ 
+.icon {
+    padding-right: 10px;
+} 
+/* section */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 20px 0px;
+    border-radius: 15px;
+}
+@media(min-width: 700px){
+    section {
+        width: calc(85%/3);
+        margin: 10px auto;
+    }
+    .div_addons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/* h1 */
+h1 {
+    text-align: center;
+}
+/* h2 */
+section h2 {
+    display: inline-block;
+    margin: 0;
+}
+/* p */
+section p {
+    display: inline-block;
+    padding-left: 70px;
+    margin: 0;
+}
+.div_addons__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+}
+/* btn icon */ 
+.btn_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+/* btn remove */
+.btn_remove {
+    position: relative;
+    display: inline-block;
+    padding:8px 12px;
+    color: #fff;
+    background-color: var(--couleur-bleu);
+    border: .8px solid #fff;
+    border-radius: 16px;
+}
+.btn_remove:hover {
+    cursor: pointer;
+    background-color: hsl(226, 11%, 37%);
+}
+/* btn checkbox slider */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--couleur--rouge);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--couleur--rouge);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* footer */
+  footer {
+    text-align: center;
+    
+  }
+  /* Utilitaires */

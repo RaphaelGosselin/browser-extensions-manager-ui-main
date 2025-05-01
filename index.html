@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script defer src="script/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+  </head>
+
+  <body class="body_couleur_dark_mode">
+    <div class="page">
+      <header>
+        <section class="barre_haut">
+          <a class="barre_haut__lien" href="#"
+            ><img
+              class="barre_haut__img"
+              src="assets/images/logo.svg"
+              alt="logo"
+          /></a>
+          <button class="barre_haut__btn">
+            <img
+              class="barre_haut__icon"
+              src="assets/images/icon-sun.svg"
+              alt="image light and dark mode" />
+          </button>
+        </section>
+        <div class="menu">
+          <h1>Extensions List</h1>
+          <div class="menu__btn">
+            <button class="btn_menu btn_all">All</button>
+            <button class="btn_menu btn_active">Active</button>
+            <button class="btn_menu btn_inactif">Inactive</button>
+          </div>
+        </div>
+      </header>
+      <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+      <main>
+        <div class="div_addons">
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-devlens.svg"
+                alt="icon-console-plus" />
+              <h2>DevLens</h2>
+              <p>
+                Quickly inspect page layouts and visualize element boundaries.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-style-spy.svg"
+                alt="icon-devlens" />
+              <h2>StyleSpy</h2>
+              <p>Instantly analyze and copy CSS from any webpage element.</p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-speed-boost.svg"
+                alt="icon-dom-snapshot" />
+              <h2>SpeedBoost</h2>
+              <p>
+                Optimizes browser resource usage to accelerate page loading.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-json-wizard.svg"
+                alt="json wizard" />
+              <h2>JSONWizard</h2>
+              <p>
+                Formats, validates, and prettifies JSON responses in-browser.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-tab-master-pro.svg"
+                alt="logo tab master pro" />
+              <h2>TabMaster Pro</h2>
+              <p>Organizes browser tabs into groups and sessions.</p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-style-spy.svg"
+                alt="logo style spy" />
+              <h2>ViewportBuddy</h2>
+              <p>
+                Simulates various screen resolutions directly within the
+                browser.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-markup-notes.svg"
+                alt="logo markup notes" />
+              <h2>Markup Notes</h2>
+              <p>
+                Enables annotation and notes directly onto webpages for
+                collaborative debugging.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-grid-guides.svg"
+                alt="logo grid guides" />
+              <h2>GridGuides</h2>
+              <p>
+                Overlay customizable grids and alignment guides on any webpage.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-palette-picker.svg"
+                alt="logo palette picker" />
+              <h2>Palette Picker</h2>
+              <p>Instantly extracts color palettes from any webpage.</p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-link-checker.svg"
+                alt="logo link checker" />
+              <h2>LinkChecker</h2>
+              <p>Scans and highlights broken links on any page.</p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-dom-snapshot.svg"
+                alt="logo dom snapshot" />
+              <h2>DOM Snapshot</h2>
+              <p>Capture and export DOM structures quickly.</p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+          <section class="sec">
+            <div class="div_addons__content">
+              <img
+                class="icon"
+                src="assets/images/logo-console-plus.svg"
+                alt="logo console plus" />
+              <h2>ConsolePlus</h2>
+              <p>
+                Enhanced developer console with advanced filtering and logging.
+              </p>
+            </div>
+            <div class="btn_icons">
+              <button class="btn_remove">Remove</button>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
